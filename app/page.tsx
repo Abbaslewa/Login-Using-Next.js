@@ -9,7 +9,6 @@ export default function LoginPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log({ email, password });
-    // You can add your login API call here
   };
 
   return (
@@ -17,24 +16,24 @@ export default function LoginPage() {
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg">
         <h1 className="text-2xl font-bold text-center text-gray-900">Login</h1>
         <p className="mt-2 text-center text-gray-600 text-sm">
-          Welcome back! Please enter your details.
+          Welcome back! Please enter your details try to see.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-          {/* Email */}
+          
           <div>
             <label className="block text-sm font-medium text-gray-700">Email</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@example.com"
+              placeholder="abbasomerhassn@gmail.com"
               className="mt-1 w-full rounded-lg border border-gray-300 p-3 text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
 
-          {/* Password */}
+          
           <div>
             <label className="block text-sm font-medium text-gray-700">Password</label>
             <input
@@ -47,7 +46,7 @@ export default function LoginPage() {
             />
           </div>
 
-          {/* Remember Me + Forgot Password */}
+          
           <div className="flex items-center justify-between text-sm">
             <label className="flex items-center gap-2">
               <input type="checkbox" className="rounded border-gray-300" />
@@ -58,7 +57,7 @@ export default function LoginPage() {
             </a>
           </div>
 
-          {/* Submit Button */}
+          
           <button
             type="submit"
             className="w-full rounded-lg bg-blue-600 p-3 font-semibold text-white hover:bg-blue-700 transition-colors"
