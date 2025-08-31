@@ -16,7 +16,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md rounded-2xl bg-white p-8 shadow-lg">
         <h1 className="text-2xl font-bold text-center text-gray-900">Login</h1>
         <p className="mt-2 text-center text-gray-600 text-sm">
-          Welcome back! Please enter your details try to see more .
+          Welcome back! Please enter your details try to see  .
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
