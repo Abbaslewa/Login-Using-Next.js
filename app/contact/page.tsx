@@ -1,15 +1,20 @@
 "use client";
 import { useState } from "react";
-import WhatsAppButton from "../components/WhatsAppButton";
+
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const handleChange = (e) => {
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert("Thank you for contacting us! We will reply soon.");
     setForm({ name: "", email: "", message: "" });
@@ -64,7 +69,7 @@ export default function Contact() {
               <label className="block text-gray-700 mb-2">Message</label>
               <textarea
                 name="message"
-                rows="5"
+                rows={5}
                 value={form.message}
                 onChange={handleChange}
                 required
@@ -86,12 +91,12 @@ export default function Contact() {
       
       <section className="py-16 px-6 text-center bg-white">
         <h2 className="text-2xl font-bold text-blue-900 mb-6">
-          Other Ways to Reach Us
+          Make sure to send your detileels correctly to this email
         </h2>
         <p className="text-gray-700 mb-2">
           📧 Email:{" "}
           <a
-            href="abbasomerhassn@gmail.com"
+            href="mailto:abbasomerhassn@gmail.com"
             className="text-blue-600 hover:underline"
           >
             abbasomerhassn@gmail.com

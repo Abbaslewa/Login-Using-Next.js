@@ -4,11 +4,15 @@ import { useState } from "react";
 export default function Register() {
   const [form, setForm] = useState({ name: "", email: "", country: "" });
 
-  const handleChange = (e) => {
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement>
+  ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert("✅ Registration submitted! We will contact you soon.");
     setForm({ name: "", email: "", country: "" });
