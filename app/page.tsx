@@ -73,7 +73,7 @@ export default function Home() {
 
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
             <video
-              src="/vi.mp4"
+              src="/video.mp4"
               controls
               className="w-full h-full object-cover rounded-xl"
             />
