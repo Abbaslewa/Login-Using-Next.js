@@ -1,12 +1,31 @@
+"use client";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+
 export default function WhatsAppButton() {
   return (
-    <a
-      href="https://wa.me/250788123456?text=Hello%20I%20want%20to%20register%20for%20the%20English%20course"
+    <Link
+      href="https://chat.whatsapp.com/KPVY3wV2iosA6nrYlolDaH" // change to your WhatsApp number
       target="_blank"
-      rel="noopener noreferrer"
-      className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition"
+      className="
+        fixed bottom-4 left-1/2 -translate-x-1/2
+        sm:static sm:translate-x-0
+        flex items-center justify-center gap-2
+        w-auto min-w-[160px]
+        bg-green-600 
+        text-white 
+        px-5 py-3
+        rounded-xl shadow-lg
+        text-sm sm:text-base md:text-lg
+        font-semibold
+        hover:bg-green-500 hover:scale-105 
+        active:scale-95
+        transition-all duration-300
+        z-50
+      "
     >
-      📲 Register on WhatsApp
-    </a>
+      <FaWhatsapp size={20} />
+      <span>Register</span>
+    </Link>
   );
 }

@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+      
       <section className="bg-blue-900 text-white py-16 px-6 text-center">
         <h1 className="text-4xl font-extrabold mb-4">Contact Us</h1>
         <p className="text-lg max-w-2xl mx-auto text-gray-200">
@@ -26,14 +26,14 @@ export default function Contact() {
         </p>
       </section>
 
-      {/* Contact Form Section */}
+      
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
           <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">
             Send Us a Message
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Full Name */}
+            
             <div>
               <label className="block text-gray-700 mb-2">Full Name</label>
               <input
@@ -46,7 +46,7 @@ export default function Contact() {
               />
             </div>
 
-            {/* Email */}
+            
             <div>
               <label className="block text-gray-700 mb-2">Email</label>
               <input
@@ -59,7 +59,7 @@ export default function Contact() {
               />
             </div>
 
-            {/* Message */}
+            
             <div>
               <label className="block text-gray-700 mb-2">Message</label>
               <textarea
@@ -72,7 +72,7 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            {/* Submit */}
+            
             <button
               type="submit"
               className="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
@@ -83,7 +83,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Other Contact Options */}
+      
       <section className="py-16 px-6 text-center bg-white">
         <h2 className="text-2xl font-bold text-blue-900 mb-6">
           Other Ways to Reach Us
@@ -91,7 +91,7 @@ export default function Contact() {
         <p className="text-gray-700 mb-2">
           📧 Email:{" "}
           <a
-            href="mailto:info@worldenglishcenter.com"
+            href="abbasomerhassn@gmail.com"
             className="text-blue-600 hover:underline"
           >
             abbasomerhassn@gmail.com
@@ -99,8 +99,11 @@ export default function Contact() {
         </p>
         <p className="text-gray-700 mb-2">📍 Location: Online & Worldwide</p>
         <div className="mt-6">
-          <WhatsAppButton />
+          
         </div>
+        
+          
+        
       </section>
     </div>
   );

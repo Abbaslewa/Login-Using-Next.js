@@ -7,18 +7,17 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-blue-900  text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+        
         <Link
           href="/"
-          className="flex items-center space-x-2 text-2xl font-extrabold tracking-wide"
+          className="flex  items-center space-x-2 text-2xl font-extrabold tracking-wide"
         >
           <FaGlobeAmericas size={28} className="text-yellow-400" />
-          <span>World English</span>
+          <span className="">World English</span>
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-lg font-medium">
           <Link href="/" className="hover:text-yellow-400 transition">
             Home
@@ -44,7 +43,7 @@ export default function Navbar() {
 
         </div>
 
-        {/* Mobile Menu Button */}
+        
         <button
           className="md:hidden text-2xl focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -53,7 +52,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      
       {isOpen && (
         <div className="md:hidden bg-blue-800 px-6 py-4 space-y-4 text-lg font-medium">
           <Link
