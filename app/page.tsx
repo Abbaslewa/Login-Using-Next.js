@@ -64,7 +64,7 @@ export default function Home() {
             </p>
 
             <a
-              href="mailto:abbasomerhassn@gmail.com"
+              href="abbasomerhassn@gmail.com"
               className="inline-block text-blue-700 font-semibold hover:text-blue-900 underline break-words"
             >
               abbasomerhassn@gmail.com
