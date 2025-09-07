@@ -19,25 +19,25 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+      
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-6 text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 drop-shadow">
           Contact Us
         </h1>
-        <p className="text-lg sm:text-xl max-w-2xl mx-auto text-gray-200 leading-relaxed">
+        <p className="text-lg font-bold sm:text-xl max-w-2xl mx-auto text-gray-200 leading-relaxed">
           Have questions about our programs or certificates? Get in touch with
           us today and we’ll be happy to help!
         </p>
       </section>
 
-      {/* Contact Form */}
+      
       <section className="py-16 px-6 bg-gray-100">
         <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl">
           <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">
             Send Us a Message
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
+            
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Full Name
@@ -52,7 +52,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* Email */}
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Email
@@ -67,7 +66,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* Message */}
             <div>
               <label className="block text-gray-700 font-medium mb-2">
                 Message
@@ -82,7 +80,6 @@ export default function Contact() {
               ></textarea>
             </div>
 
-            {/* Button */}
             <button
               type="submit"
               className="w-full bg-blue-900 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold shadow-lg transition"
@@ -93,7 +90,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Info */}
       <section className="py-16 px-6 text-center bg-white">
         <h2 className="text-2xl sm:text-3xl font-bold text-blue-900 mb-6">
           Make sure to send your details correctly to this email

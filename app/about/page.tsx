@@ -3,7 +3,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 export default function Courses() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+      
       <section className="bg-blue-900 text-white py-16 px-6 text-center">
         <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 drop-shadow">
           Our Courses
@@ -15,10 +15,10 @@ export default function Courses() {
         </p>
       </section>
 
-      {/* Courses Grid */}
+      
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-3">
-          {/* 3-Month Course */}
+          
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">
               3-Month Speaking Course
@@ -39,7 +39,6 @@ export default function Courses() {
             <WhatsAppButton />
           </div>
 
-          {/* 6-Month Program */}
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">
               6-Month Advanced Program
@@ -61,7 +60,6 @@ export default function Courses() {
             <WhatsAppButton />
           </div>
 
-          {/* Certificate Only */}
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">
               Certificate Only (Placement Test)
@@ -87,15 +85,15 @@ export default function Courses() {
         </div>
       </section>
 
-      {/* Call to Action */}
+      
       <section className="relative py-20 bg-gradient-to-r from-blue-500/40 to-blue-700/30 rounded-2xl text-center overflow-hidden mx-4 md:mx-10 my-10">
-        {/* Background blobs */}
+        
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-40 h-40 bg-blue-600/30 rounded-full blur-3xl" />
           <div className="absolute bottom-0 right-0 w-60 h-60 bg-blue-400/20 rounded-full blur-2xl" />
         </div>
 
-        {/* CTA Content */}
+        
         <div className="relative max-w-3xl mx-auto px-6">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
             Ready to Start Your English Journey?

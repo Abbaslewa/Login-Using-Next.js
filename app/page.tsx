@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex flex-col relative">
 
-      {/* Floating Home Button */}
+      
       <Link
         href="/"
         className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-blue-900 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-blue-700 transition group z-50"
@@ -19,7 +19,7 @@ export default function Home() {
         </span>
       </Link>
 
-      {/* Hero Section */}
+      
       <section className="relative text-white py-20 sm:py-24 px-4 sm:px-6 text-center">
         <div className="absolute inset-0 -z-10">
           <Image
@@ -43,9 +43,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
+      
       <section className="py-12 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto bg-blue-900/10 rounded-2xl backdrop-blur-md p-6 sm:p-10 lg:p-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="max-w-6xl mx-auto bg-blue-900/20 rounded-2xl backdrop-blur-md p-6 sm:p-10 lg:p-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           <div>
             <h2 className="text-xl sm:text-3xl text-center font-bold text-blue-900 mb-4">
@@ -53,25 +53,27 @@ export default function Home() {
             </h2>
             <p className="text-gray-900 font-bold text-sm sm:text-lg leading-relaxed mb-4 sm:mb-6">
               At{" "}
-              <strong className="text-blue-800">World English Training Center</strong>, we
+              <strong className="text-blue-800 font-bold">World English Training Center</strong>, we
               believe English opens doors to global opportunities. Our programs
               are designed for beginners, professionals, and anyone looking to
               improve their communication, confidence, and fluency in English.
             </p>
 
-            <p className="text-gray-700 text-sm sm:text-lg mb-2">
-              📩 Please make sure to send your registration details to this email:
+            <p className="text-gray-900 text-sm sm:text-lg mb-2">
+              Please make sure to send your registration details to this email:
+              your Full name in English and your email & Country
             </p>
 
             <a
               href="abbasomerhassn@gmail.com"
-              className="inline-block text-blue-700 font-semibold hover:text-blue-900 underline break-words"
+              className="inline-block text-blue-700 font-bold hover:text-blue-900 underline break-words"
             >
               abbasomerhassn@gmail.com
             </a>
           </div>
 
           <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
+            <h1 className="font-bold  text-blue-800">Play this video</h1>
             <video
               src="/video.mp4"
               controls
@@ -81,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Courses Section */}
+      
       <section className="py-12 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-xl sm:text-3xl font-bold text-blue-900 mb-8 sm:mb-12">
@@ -89,7 +91,7 @@ export default function Home() {
           </h2>
           <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
             
-            {/* Card 1 */}
+            
             <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
               <FaBookOpen className="text-blue-700 mx-auto mb-3 sm:mb-4" size={36} />
               <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
@@ -107,7 +109,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 2 */}
+            
             <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
               <FaGraduationCap className="text-green-700 mx-auto mb-3 sm:mb-4" size={36} />
               <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
@@ -125,7 +127,7 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* Card 3 */}
+            
             <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
               <FaCertificate className="text-yellow-600 mx-auto mb-3 sm:mb-4" size={36} />
               <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
@@ -145,8 +147,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
+      
+      
       <section className="relative py-16 sm:py-20 px-4 bg-blue-400/20 rounded-2xl text-center overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-32 sm:w-40 h-32 sm:h-40 bg-blue-600/30 rounded-full blur-3xl" />
@@ -159,7 +161,7 @@ export default function Home() {
           </h2>
           <p className="mb-6 sm:mb-10 text-sm sm:text-lg md:text-xl leading-relaxed">
             Register today and take the first step toward{" "}
-            <span className="font-semibold text-blue-900">global opportunities</span>.
+            <span className="font-bold text-blue-900">global opportunities</span>.
           </p>
 
           <a

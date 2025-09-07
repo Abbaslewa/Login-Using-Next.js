@@ -38,7 +38,7 @@ export default function Books() {
         <h1 className="text-4xl font-bold text-blue-900 mb-4">
           English Learning Books
         </h1>
-        <p className="text-lg text-gray-700">
+        <p className="text-lg font-bold text-gray-700">
           Explore our recommended books to boost your English grammar,
           vocabulary, and confidence.
         </p>

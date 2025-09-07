@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-900/90 backdrop-blur-md text-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
+       
         <Link
           href="/"
           className="flex items-center space-x-2 text-2xl font-extrabold tracking-wide"
@@ -28,7 +28,7 @@ export default function Navbar() {
           <span className="hover:text-yellow-400 transition">World English</span>
         </Link>
 
-        {/* Desktop Links */}
+        
         <div className="hidden md:flex space-x-8 text-lg font-medium">
           {navLinks.map((link) => (
             <Link
@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
+        
         <button
           className="md:hidden text-2xl focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +52,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Links */}
+      
       <div
         className={`md:hidden bg-blue-800 overflow-hidden transition-all duration-300 ${
           isOpen ? "max-h-96 opacity-100 py-4" : "max-h-0 opacity-0 py-0"

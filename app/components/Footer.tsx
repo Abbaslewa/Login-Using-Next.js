@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-blue-900 text-white py-10 sm:py-12 px-4 sm:px-6 mt-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
         
-        {/* Brand Info */}
+       
         <div>
           <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
             🌍 World English Training Center
@@ -18,7 +18,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Quick Links */}
+       
         <div>
           <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
             Quick Links
@@ -52,7 +52,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Socials */}
+        
         <div>
           <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">
             Connect With Us
@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom */}
+      
       <div className="border-t border-gray-700 mt-8 sm:mt-10 pt-4 sm:pt-6 text-center text-gray-400 text-xs sm:text-sm">
         © {new Date().getFullYear()} World English Training Center. All Rights Reserved.
       </div>

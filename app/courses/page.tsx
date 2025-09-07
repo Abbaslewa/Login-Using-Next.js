@@ -13,8 +13,6 @@ export default function Courses() {
           need an official certificate, we have the right course for you.
         </p>
       </section>
-
-      
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">
@@ -25,7 +23,6 @@ export default function Courses() {
             skills quickly. Ideal for learners who want confidence in daily
             conversations and real-life situations.
           </p>
-
           <h3 className="text-xl font-semibold text-blue-800 mb-4">
             What You Will Learn
           </h3>
@@ -36,7 +33,6 @@ export default function Courses() {
             <li>Listening comprehension exercises</li>
             <li>Group discussions and role-plays</li>
           </ul>
-
           <p className="text-gray-700 mb-6">
             📜 <strong>Certificate:</strong> Certificate of English
             Communication (3-Month)
@@ -44,8 +40,6 @@ export default function Courses() {
           <WhatsAppButton />
         </div>
       </section>
-
-      
       <section className="py-16 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">
@@ -68,7 +62,6 @@ export default function Courses() {
             <li>Debates and advanced group discussions</li>
             <li>Formal writing: essays, reports, and applications</li>
           </ul>
-
           <p className="text-gray-700 mb-6">
             📜 <strong>Certificate:</strong> Advanced English Fluency
             Certificate (6-Month)
@@ -99,7 +92,6 @@ export default function Courses() {
             <li>Short writing assessment</li>
             <li>Personalized feedback report</li>
           </ul>
-
           <p className="text-gray-700 mb-6">
             📜 <strong>Certificate:</strong> Official World English Training
             Center Certificate (3-Month or 6-Month based on your choice)
@@ -107,10 +99,7 @@ export default function Courses() {
           <WhatsAppButton />
         </div>
       </section>
-
-      
       <section className="relative py-20 bg-blue-400/20 rounded-2xl  text-center overflow-hidden">
-  {/* Decorative background */}
   <div className="absolute inset-0">
     <div className="absolute top-0 left-0 w-40 h-40 bg-blue-600/30 rounded-full blur-3xl" />
     <div className="absolute bottom-0 right-0 w-60 h-60 bg-blue-400/20 rounded-full blur-2xl" />
@@ -123,12 +112,10 @@ export default function Courses() {
     <p className="mb-10 text-base sm:text-lg md:text-xl  leading-relaxed">
       Register today and take the first step toward <span className="font-semibold text-blue-900">global opportunities</span>.
     </p>
-
     <a
       href="https://chat.whatsapp.com/KPVY3wV2iosA6nrYlolDaH" 
       target="_blank"
-      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 active:scale-95 transition duration-300"
-    >
+      className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 active:scale-95 transition duration-300">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-6 h-6"

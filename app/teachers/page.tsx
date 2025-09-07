@@ -19,8 +19,8 @@ export default function Teachers() {
 
     {
       name: "Deng Luxury",
-      title: "Business English Trainer",
-      bio: "Expert in professional English for business, interviews, and workplace communication.",
+      title: "teaching you how to speak  ",
+      bio: "Over 6 years teaching people how to speak.",
       email: "dluxueymou@gmail.com",
       phone: "+1 555 345 6789",
     },
@@ -31,13 +31,13 @@ export default function Teachers() {
       
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16 px-6 text-center">
         <h1 className="text-4xl font-extrabold mb-4">Meet Our Teachers</h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-200">
+        <p className="text-lg max-w-2xl mx-auto font-bold text-gray-200">
           Our professional English instructors are dedicated to helping you
           achieve fluency, confidence, and success in your learning journey.
         </p>
       </section>
 
-      {/* Teachers List */}
+      
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {teachers.map((teacher, index) => (
@@ -45,14 +45,14 @@ export default function Teachers() {
               key={index}
               className="bg-white rounded-2xl shadow hover:shadow-lg transition p-6 text-center"
             >
-              {/* Avatar instead of image */}
+              
               <FaUserCircle className="w-32 h-32 mx-auto text-blue-600 mb-4" />
 
               <h3 className="text-xl font-bold text-blue-900">{teacher.name}</h3>
               <p className="text-sm text-gray-500">{teacher.title}</p>
               <p className="text-gray-700 mt-3">{teacher.bio}</p>
 
-              {/* Contact */}
+              
               <div className="mt-4 space-y-2 text-sm">
                 <p className="flex items-center justify-center space-x-2 text-gray-600">
                   <FaEnvelope className="text-blue-700" />
