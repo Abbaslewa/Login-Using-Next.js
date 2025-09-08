@@ -24,6 +24,13 @@ export default function Teachers() {
       email: "dluxueymou@gmail.com",
       phone: "+1 555 345 6789",
     },
+    {
+      name: "Abbas Omer Hassan",
+      title: "teaching you how to speak  ",
+      bio: "Over 6 years teaching people how to speak.",
+      email: "abbasomerhassn@gmail.com",
+      phone: "+250 794294091",
+    },
   ];
 
   return (
@@ -39,7 +46,7 @@ export default function Teachers() {
 
       
       <section className="py-16 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {teachers.map((teacher, index) => (
             <div
               key={index}

@@ -24,11 +24,10 @@ export default function Navbar() {
           href="/"
           className="flex items-center space-x-2 text-2xl font-extrabold tracking-wide"
         >
-          <FaGlobeAmericas size={28} className="text-yellow-400" />
-          <span className="hover:text-yellow-400 transition">World English</span>
+          <FaGlobeAmericas size={28} className="text-green-400" />
+          <span className="hover:text-green-400 transition">World English</span>
         </Link>
 
-        
         <div className="hidden md:flex space-x-8 text-lg font-medium">
           {navLinks.map((link) => (
             <Link
@@ -36,13 +35,11 @@ export default function Navbar() {
               href={link.href}
               className="relative group"
             >
-              <span className="hover:text-yellow-400 transition">{link.name}</span>
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-yellow-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="hover:text-green-400 transition">{link.name}</span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-green-400 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
         </div>
-
-        
         <button
           className="md:hidden text-2xl focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -63,7 +60,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="block hover:text-yellow-400 transition"
+              className="block hover:text-green-400 transition"
               onClick={() => setIsOpen(false)}
             >
               {link.name}

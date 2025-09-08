@@ -9,7 +9,7 @@ export default function Footer() {
        
         <div>
           <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">
-            🌍 World English Training Center
+             World English Training Center
           </h2>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             Learn English with confidence. We provide 3 and 6-month programs
@@ -25,27 +25,27 @@ export default function Footer() {
           </h3>
           <ul className="space-y-2 text-sm sm:text-base">
             <li>
-              <Link href="/" className="hover:text-yellow-400 transition">
+              <Link href="/" className="hover:text-green-400 transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-yellow-400 transition">
+              <Link href="/about" className="hover:text-green-400 transition">
                 About
               </Link>
             </li>
             <li>
-              <Link href="/courses" className="hover:text-yellow-400 transition">
+              <Link href="/courses" className="hover:text-green-400 transition">
                 Courses
               </Link>
             </li>
             <li>
-              <Link href="/register" className="hover:text-yellow-400 transition">
+              <Link href="/register" className="hover:text-green-400 transition">
                 Register
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-yellow-400 transition">
+              <Link href="/contact" className="hover:text-green-400 transition">
                 Contact
               </Link>
             </li>
@@ -62,7 +62,7 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition"
+              className="hover:text-green-400 transition"
             >
               <FaFacebookF size={20} />
             </a>
@@ -70,13 +70,13 @@ export default function Footer() {
               href="https://chat.whatsapp.com/KPVY3wV2iosA6nrYlolDaH"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-yellow-400 transition"
+              className="hover:text-green-400 transition"
             >
               <FaWhatsapp size={20} />
             </a>
             <a
               href="mailto:abbasomerhassn@gmail.com"
-              className="hover:text-yellow-400 transition"
+              className="hover:text-green-400 transition"
             >
               <FaEnvelope size={20} />
             </a>
