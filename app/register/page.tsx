@@ -117,13 +117,12 @@ export default function Register() {
             </span>
             .
           </p>
-
           <a
             href="https://chat.whatsapp.com/KPVY3wV2iosA6nrYlolDaH" 
             target="_blank"
             className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-xl sm:rounded-2xl text-base sm:text-lg font-bold shadow-lg hover:shadow-2xl transform hover:scale-105 active:scale-95 transition duration-300"
           >
-             Register Now
+           Register Now
           </a>
         </div>
       </section>
