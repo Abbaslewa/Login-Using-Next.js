@@ -109,6 +109,7 @@ export default function Register() {
         <div className="relative max-w-2xl sm:max-w-3xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-6 drop-shadow-lg">
              Ready to Start Your English Journey?
+             if you are interested please click the button below to register 
              
           </h2>
           <p className="mb-8 text-sm sm:text-base md:text-lg lg:text-xl  leading-relaxed">
