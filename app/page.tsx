@@ -10,10 +10,10 @@ export default function Home() {
       {/* Floating Back to Home */}
       <Link
         href="/"
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r  text-white p-3 sm:p-4 rounded-full shadow-lg hover:from-blue-500 hover:to-blue-700 transition group z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r bg-blue-800  text-white p-3 sm:p-4 rounded-full shadow-lg hover:from-blue-500 hover:to-blue-700 transition group z-50"
       >
         <FaHome size={22} />
-        <span className="absolute right-14 sm:right-16 bottom-4 sm:bottom-6  text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+        <span className="absolute right-14 sm:right-16 bottom-4 sm:bottom-6 bg-blue-800 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
           Back to Home
         </span>
       </Link>
