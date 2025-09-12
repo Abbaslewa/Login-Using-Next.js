@@ -6,21 +6,20 @@ import { FaBookOpen, FaGraduationCap, FaCertificate, FaHome } from "react-icons/
 
 export default function Home() {
   return (
-    <div className="flex flex-col relative">
-
-      
+    <div className="flex flex-col relative  text-gray-900">
+      {/* Floating Back to Home */}
       <Link
         href="/"
-        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-blue-900 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-blue-700 transition group z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r  text-white p-3 sm:p-4 rounded-full shadow-lg hover:from-blue-500 hover:to-blue-700 transition group z-50"
       >
         <FaHome size={22} />
-        <span className="absolute right-14 sm:right-16 bottom-4 sm:bottom-6 bg-gray-800 text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+        <span className="absolute right-14 sm:right-16 bottom-4 sm:bottom-6  text-white text-xs sm:text-sm px-2 sm:px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
           Back to Home
         </span>
       </Link>
 
-      
-      <section className="relative text-white py-20 sm:py-24 px-4 sm:px-6 text-center">
+      {/* Hero Section */}
+      <section className="relative py-20 sm:py-28 px-4 sm:px-6 text-center">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/ui.webp"
@@ -29,51 +28,55 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/40" />
+          {/* overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t  to-transparent backdrop-blur-[2px]" />
         </div>
-        <div className="relative max-w-3xl sm:max-w-4xl mx-auto p-4 sm:p-6">
-          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 drop-shadow-lg">
+        <div className="relative max-w-3xl sm:max-w-4xl mx-auto">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold mb-6 bg-clip-text bg-gradient-to-r text-white drop-shadow-[0_0_15px_rgba(59,130,246,0.8)] animate-pulse">
             World English Training Center
           </h1>
-          <p className="text-sm sm:text-lg md:text-xl text-gray-100 mb-6 sm:mb-8 font-medium leading-relaxed">
-            Speak English with confidence. Join our professional programs and
-            earn an internationally recognized certificate.
+          <p className="text-gray-100 text-sm sm:text-lg md:text-xl mb-8 leading-relaxed">
+            Speak English with confidence. Join our{" "}
+            <span className="text-blue-300 font-semibold">professional programs</span> 
+            and earn an internationally recognized certificate.
           </p>
           <WhatsAppButton />
         </div>
       </section>
 
-      
-      <section className="py-12 sm:py-20 px-4 sm:px-6">
-        <div className="max-w-6xl mx-auto bg-blue-900/20 rounded-2xl backdrop-blur-md p-6 sm:p-10 lg:p-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
-          
+      {/* About Us */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto bg-gradient-to-br from-white via-blue-50 to-white border border-blue-400 rounded-2xl p-6 sm:p-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center shadow-lg">
           <div>
-            <h2 className="text-xl sm:text-3xl text-center font-bold text-blue-900 mb-4">
+            <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-blue-700">
               About Us
             </h2>
-            <p className="text-gray-900 font-bold text-sm sm:text-lg leading-relaxed mb-4 sm:mb-6">
+            <p className="text-gray-700 text-sm sm:text-lg leading-relaxed mb-6">
               At{" "}
-              <strong className="text-blue-800 font-bold">World English Training Center</strong>, we
-              believe English opens doors to global opportunities. Our programs
-              are designed for beginners, professionals, and anyone looking to
-              improve their communication, confidence, and fluency in English.
+              <span className="text-blue-600 font-semibold">World English Training Center</span>, 
+              we believe English opens doors to global opportunities. Our programs 
+              are designed for{" "}
+              <span className="text-blue-600">beginners, professionals</span>, 
+              and anyone looking to improve communication and fluency.
             </p>
 
-            <p className="text-gray-900 text-sm sm:text-lg mb-2">
-              Please make sure to send your registration details to this email:
-              your Full name in English and your email & Country
+            <p className="text-gray-600 mb-4">
+              Please send your registration details:{" "}
+              <span className="text-blue-700">Full name, Email, and Country</span>
             </p>
 
             <a
-              href="abbasomerhassn@gmail.com"
-              className="inline-block text-blue-700 font-bold hover:text-blue-900 underline break-words"
+              href="mailto:abbasomerhassn@gmail.com"
+              className="inline-block text-blue-700 font-semibold hover:text-blue-900 underline"
             >
               abbasomerhassn@gmail.com
             </a>
           </div>
 
-          <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-lg">
-            <h1 className="font-bold  text-blue-800">Play this video</h1>
+          <div className="relative w-full aspect-video rounded-xl overflow-hidden border-2 border-blue-500 shadow-lg hover:shadow-blue-400/70 transform hover:scale-[1.02] transition duration-300">
+            <h1 className="absolute top-2 left-2 bg-blue-900/80 px-3 py-1 text-white text-sm font-bold rounded-md">
+              Play this video
+            </h1>
             <video
               src="/video.mp4"
               controls
@@ -83,100 +86,65 @@ export default function Home() {
         </div>
       </section>
 
-      
-      <section className="py-12 sm:py-20 px-4 sm:px-6 bg-white">
+      {/* Courses */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 bg-blue-50">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-xl sm:text-3xl font-bold text-blue-900 mb-8 sm:mb-12">
+          <h2 className="text-2xl sm:text-4xl font-bold text-blue-700 mb-12">
             Our Courses
           </h2>
-          <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 md:grid-cols-3">
-            
-            
-            <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
-              <FaBookOpen className="text-blue-700 mx-auto mb-3 sm:mb-4" size={36} />
-              <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
-                3-Month Speaking Course
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                Build your grammar, vocabulary, and speaking skills with daily
-                practice and group sessions.
-              </p>
-              <Link
-                href="/courses"
-                className="text-blue-600 font-medium hover:underline"
+          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+            {[
+              {
+                icon: <FaBookOpen className="text-blue-600 mx-auto mb-4" size={40} />,
+                title: "3-Month Speaking Course",
+                desc: "Build your grammar, vocabulary, and speaking skills with daily practice and group sessions.",
+              },
+              {
+                icon: <FaGraduationCap className="text-blue-600 mx-auto mb-4" size={40} />,
+                title: "6-Month Advanced Program",
+                desc: "Gain advanced communication, public speaking, and business English skills for international success.",
+              },
+              {
+                icon: <FaCertificate className="text-blue-600 mx-auto mb-4" size={40} />,
+                title: "Certificate Only",
+                desc: "Already fluent? Pass our test and receive your official certificate.",
+              },
+            ].map((course, i) => (
+              <div
+                key={i}
+                className="p-6 border border-blue-400 rounded-2xl shadow-lg bg-white 
+                hover:shadow-blue-500/40 hover:-translate-y-2 transform transition duration-300"
               >
-                Learn More →
-              </Link>
-            </div>
-
-            
-            <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
-              <FaGraduationCap className="text-green-700 mx-auto mb-3 sm:mb-4" size={36} />
-              <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
-                6-Month Advanced Program
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                Gain advanced communication, public speaking, and business
-                English skills for international success.
-              </p>
-              <Link
-                href="/courses"
-                className="text-blue-600 font-medium hover:underline"
-              >
-                Learn More →
-              </Link>
-            </div>
-
-            
-            <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition bg-gray-50">
-              <FaCertificate className="text-yellow-600 mx-auto mb-3 sm:mb-4" size={36} />
-              <h3 className="text-lg sm:text-2xl font-semibold text-blue-800 mb-2 sm:mb-3">
-                Certificate Only
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base mb-3 sm:mb-4">
-                Already fluent? Pass our test and receive your official
-                certificate within 3 or 6 months.
-              </p>
-              <Link
-                href="/courses"
-                className="text-blue-600 font-medium hover:underline"
-              >
-                Learn More →
-              </Link>
-            </div>
+                {course.icon}
+                <h3 className="text-xl font-semibold text-blue-700 mb-3">
+                  {course.title}
+                </h3>
+                <p className="text-gray-600 mb-4">{course.desc}</p>
+                <Link href="/courses" className="text-blue-600 hover:underline font-medium">
+                  Learn More →
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
-      
-      
-      <section className="relative py-16 sm:py-20 px-4 bg-blue-400/20 rounded-2xl text-center overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-32 sm:w-40 h-32 sm:h-40 bg-blue-600/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-0 w-44 sm:w-60 h-44 sm:h-60 bg-blue-500/30 rounded-full blur-2xl" />
-        </div>
 
-        <div className="relative max-w-2xl sm:max-w-3xl mx-auto">
-          <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 drop-shadow-lg">
+      {/* CTA */}
+      <section className="relative py-20 px-4 bg-gradient-to-r from-blue-600 via-blue-500 to-blue-700 text-center text-white rounded-t-3xl animate-gradient-x bg-[length:200%_200%]">
+        <div className="relative max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-5xl font-extrabold mb-6 drop-shadow-lg">
             Ready to Start Your English Journey?
           </h2>
-          <p className="mb-6 sm:mb-10 text-sm sm:text-lg md:text-xl leading-relaxed">
+          <p className="mb-8 text-base sm:text-lg text-blue-100">
             Register today and take the first step toward{" "}
-            <span className="font-bold text-blue-900">global opportunities</span>.
+            <span className="font-bold text-white">global opportunities</span>.
           </p>
-
           <a
             href="https://chat.whatsapp.com/KPVY3wV2iosA6nrYlolDaH"
             target="_blank"
-            className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-2xl text-base sm:text-lg font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 active:scale-95 transition duration-300"
+            className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 transition duration-300"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5 sm:w-6 sm:h-6"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M12.04 2.003c-5.524 0-10.002 4.478-10.002 10.002a9.93 9.93 0 001.367 5.034L2 22l5.114-1.346a9.94 9.94 0 004.926 1.295h.004c5.523 0 10.001-4.478 10.001-10.002 0-2.673-1.041-5.186-2.93-7.074A9.94 9.94 0 0012.04 2.003zm5.846 14.544c-.248.695-1.229 1.26-1.694 1.34-.447.08-1.012.115-1.637-.101-.379-.131-.869-.283-1.498-.554-2.64-1.145-4.353-3.942-4.487-4.126-.131-.184-1.07-1.425-1.07-2.72s.678-1.922.918-2.19c.24-.269.524-.336.698-.336.174 0 .349.002.502.009.162.007.379-.059.594.454.216.512.732 1.768.797 1.895.065.127.109.276.02.444-.087.168-.131.276-.26.424-.131.148-.276.33-.394.444-.131.127-.268.266-.115.521.152.255.674 1.111 1.448 1.8 1.002.892 1.845 1.165 2.1 1.297.261.132.412.112.567-.067.152-.179.652-.758.826-1.018.174-.26.348-.218.593-.131.245.087 1.548.73 1.815.863.267.131.445.197.51.309.065.112.065.647-.183 1.342z" />
-            </svg>
+            <FaGraduationCap size={22} className="text-blue-600" />
             Register Now
           </a>
         </div>
