@@ -41,7 +41,8 @@ export default function Teachers() {
         <p className="text-lg max-w-2xl mx-auto font-bold text-gray-200">
           Our professional English instructors are dedicated to helping you
           achieve fluency, confidence, and success in your learning journey.
-          if you want to register please contact any of the teachers below. 
+          if you want to register please contact any of the teachers below.
+          and you will receive your certificate. 
         </p>
       </section>
 
