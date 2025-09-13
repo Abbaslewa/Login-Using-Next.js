@@ -42,7 +42,7 @@ export default function Teachers() {
           Our professional English instructors are dedicated to helping you
           achieve fluency, confidence, and success in your learning journey.
           if you want to register please contact any of the teachers below.
-          and you will receive your certificate. 
+           
         </p>
       </section>
 
