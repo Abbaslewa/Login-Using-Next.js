@@ -12,7 +12,7 @@ export default function Courses() {
           At <strong>World English Training Center</strong>, we offer flexible
           programs designed to help you build confidence, improve fluency, and
           achieve global opportunities with an official certificate.
-          and 
+          
         </p>
       </section>
 
