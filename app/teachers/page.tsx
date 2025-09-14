@@ -31,6 +31,7 @@ export default function Teachers() {
       email: "abbasomerhassn@gmail.com",
       phone: "+250 794294091",
     },
+     
   ];
 
   return (
