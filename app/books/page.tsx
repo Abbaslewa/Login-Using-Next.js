@@ -40,7 +40,8 @@ export default function Books() {
         </h1>
         <p className="text-lg font-bold text-gray-700">
           Explore our recommended books to boost your English grammar,
-          vocabulary, and confidence. 
+          vocabulary, and confidence.
+          and confidence. 
           
         </p>
       </div>
