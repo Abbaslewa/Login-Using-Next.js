@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-blue-900/60 backdrop-blur-lg border-b border-white/10 text-white sticky top-0 z-50">
+    <nav className="bg-blue-900/70 backdrop-blur-lg border-b border-white/10 text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
@@ -44,8 +44,11 @@ export default function Navbar() {
               <span className="transition-colors duration-300 group-hover:text-green-400">
                 {link.name}
               </span>
-              <span className={`absolute left-0 -bottom-1 h-[2px] bg-green-400 transition-all duration-300
-                ${pathname === link.href ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+              {/* Underline Animation */}
+              <span
+                className={`absolute left-0 -bottom-1 h-[2px] bg-green-400 transition-all duration-300
+                ${pathname === link.href ? "w-full" : "w-0 group-hover:w-full"}`}
+              ></span>
             </Link>
           ))}
 
@@ -60,7 +63,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-3xl focus:outline-none hover:text-green-400 transition"
+          className="md:hidden text-3xl focus:outline-none hover:text-green-400 transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
         >
@@ -74,7 +77,7 @@ export default function Navbar() {
           isOpen ? "max-h-screen opacity-100 scale-y-100 py-6" : "max-h-0 opacity-0 scale-y-0 py-0"
         }`}
       >
-        <div className="px-6 space-y-6 text-lg font-medium">
+        <div className="px-6 space-y-6 text-lg font-medium flex flex-col items-center">
           {navLinks.map((link) => (
             <Link
               key={link.name}

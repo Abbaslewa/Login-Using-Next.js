@@ -42,7 +42,6 @@ export default function Books() {
           Explore our recommended books to boost your English grammar,
           vocabulary, 
           
-          
         </p>
       </div>
 
