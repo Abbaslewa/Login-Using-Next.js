@@ -3,24 +3,18 @@ import { useState } from "react";
 
 export default function Register() {
   const [form, setForm] = useState({ name: "", email: "", country: "" });
-
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
-
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("✅ Registration submitted! We will contact you soon.");
+    alert(" Registration submitted! We will contact you soon.");
     setForm({ name: "", email: "", country: "" });
   };
-
   return (
     <div className="flex flex-col">
-      
       <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 sm:py-16 px-4 sm:px-6 text-center">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold mb-4">
           Register for World English Training Center
@@ -33,15 +27,12 @@ export default function Register() {
           and receive a recognized certificate upon completion. 
         </p>
       </section>
-
-      
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
         <div className="max-w-lg sm:max-w-2xl lg:max-w-3xl mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-900 mb-6 text-center">
             Registration Form
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
-            
             <div>
               <label className="block text-gray-700 font-medium mb-2 text-sm sm:text-base">
                 Full Name
@@ -74,7 +65,7 @@ export default function Register() {
             
             <div>
               <label className="block text-gray-700 font-medium mb-2 text-sm sm:text-base">
-                Country
+                Country 
               </label>
               <input
                 type="text"

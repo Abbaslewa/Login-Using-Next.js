@@ -12,11 +12,8 @@ export default function Courses() {
           At <strong>World English Training Center</strong>, we offer flexible
           programs designed to help you build confidence, improve fluency, and
           achieve global opportunities with an official certificate.
-          
         </p>
       </section>
-
-      
       <section className="py-16 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto grid gap-10 md:grid-cols-3">
           
@@ -60,7 +57,6 @@ export default function Courses() {
             </p>
             <WhatsAppButton />
           </div>
-
           <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
             <h2 className="text-2xl font-bold text-blue-900 mb-4">
               Certificate Only (Placement Test)
