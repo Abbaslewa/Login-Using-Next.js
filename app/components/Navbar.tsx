@@ -97,7 +97,7 @@ export default function Navbar() {
             className="block text-center px-5 py-2 rounded-full bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold shadow-lg hover:shadow-green-400/50 hover:scale-105 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
-            Register Now
+            Register 
           </Link>
         </div>
       </div>
