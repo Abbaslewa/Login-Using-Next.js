@@ -118,7 +118,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold text-blue-700 mb-3">{course.title}</h3>
                 <p className="text-gray-600 mb-4">{course.desc}</p>
                 <Link href="/courses" className="text-blue-600 hover:underline font-medium">
-                  Learn More 
+                  Learn More →
                 </Link>
               </div>
             ))}
