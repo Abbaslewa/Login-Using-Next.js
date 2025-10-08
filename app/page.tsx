@@ -142,8 +142,8 @@ export default function Home() {
             className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-blue-700 px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95 transition-all duration-300"
           >
             <FaGraduationCap size={22} className="text-blue-600" />
-            Register 
-            
+            Register Now
+
           </a>
         </div>
       </section>
