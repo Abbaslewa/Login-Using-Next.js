@@ -26,7 +26,7 @@ export default function Contact() {
         </h1>
         <p className="text-lg font-bold sm:text-xl max-w-2xl mx-auto text-gray-200 leading-relaxed">
           Have questions about our programs or certificates? Get in touch with
-          us today and we’ll be happy to help!
+          us today and be happy to help
         </p>
       </section>
 
