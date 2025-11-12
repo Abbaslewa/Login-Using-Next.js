@@ -2,7 +2,7 @@ import React from 'react'
 
 const CourseCard = () => {
   return (
-    <div>CourseCard</div>
+    <div className='bg-green-500'>CourseCard</div>
   )
 }
 
