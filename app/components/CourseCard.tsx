@@ -6,4 +6,4 @@ const CourseCard = () => {
   )
 }
 
-export default 
+export default CourseCard
