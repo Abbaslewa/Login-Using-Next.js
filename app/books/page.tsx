@@ -75,7 +75,7 @@ export default function Books() {
 
             
             <button className="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-            
+              Read More
             </button>
           </div>
         ))}
