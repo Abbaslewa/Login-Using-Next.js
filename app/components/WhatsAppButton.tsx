@@ -21,8 +21,7 @@ export default function WhatsAppButton() {
         active:scale-95
         transition-all duration-300
         z-50
-      "
-    >
+      ">
       <FaWhatsapp size={20} />
       <span>Register</span>
     </Link>
