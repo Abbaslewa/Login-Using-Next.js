@@ -23,7 +23,7 @@ export default function WhatsAppButton() {
         z-50
       ">
       <FaWhatsapp size={20} />
-      <span>register</span>
+      <span></span>
     </Link>
   );
 }
